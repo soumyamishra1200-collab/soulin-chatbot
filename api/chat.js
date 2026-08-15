@@ -50,7 +50,7 @@ module.exports = async function handler(req, res) {
     const body = {
       systemInstruction: { parts: [{ text: String(systemInstruction).slice(0, 8000) }] },
       contents: trimmedContents,
-      generationConfig: { temperature: 0.6, topP: 0.9, maxOutputTokens: MAX_OUTPUT_TOKENS },
+      generationConfig: { maxOutputTokens: MAX_OUTPUT_TOKENS },
     };
 
     const upstream = await fetch(

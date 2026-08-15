@@ -12,7 +12,7 @@
 // - Add a rate limiter (e.g. Upstash Ratelimit) keyed on IP to stop abuse,
 //   since this endpoint is public and will consume your Gemini quota.
 
-const GEMINI_MODEL = "gemini-flash-latest";
+const GEMINI_MODEL = "gemini-3.6-flash";
 const MAX_OUTPUT_TOKENS = 220;
 const MAX_HISTORY_MESSAGES = 8;
 const MAX_MESSAGE_CHARS = 2000;
